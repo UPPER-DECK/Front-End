@@ -11,10 +11,10 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+import RestaurantSharpIcon from "@mui/icons-material/RestaurantSharp";
 
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Dashborad", "Categories", "Contact"];
+const settings = ["Profile", "About", "Logout"];
 
 const ResponsiveAppBar = () => {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,26 +36,26 @@ const ResponsiveAppBar = () => {
 	};
 
 	return (
-		<AppBar position="static">
+		<AppBar position="static" color="transparent">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
-					<AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+					<RestaurantSharpIcon sx={{ display: { xs: "none", md: "flex" }, mr: 2, color: "whitesmoke" }} />
 					<Typography
 						variant="h6"
 						noWrap
 						component="a"
 						href="/"
 						sx={{
-							mr: 2,
+							mr: 4,
 							display: { xs: "none", md: "flex" },
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "inherit",
+							color: "whitesmoke",
 							textDecoration: "none",
 						}}
 					>
-						LOGO
+						Upper Deck
 					</Typography>
 
 					<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -65,7 +65,7 @@ const ResponsiveAppBar = () => {
 							aria-controls="menu-appbar"
 							aria-haspopup="true"
 							onClick={handleOpenNavMenu}
-							color="inherit"
+							color="white"
 						>
 							<MenuIcon />
 						</IconButton>
@@ -94,28 +94,28 @@ const ResponsiveAppBar = () => {
 							))}
 						</Menu>
 					</Box>
-					<AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+					<RestaurantSharpIcon sx={{ display: { xs: "flex", md: "none" }, mr: 2, color: "whitesmoke" }} />
 					<Typography
 						variant="h5"
 						noWrap
 						component="a"
 						href=""
 						sx={{
-							mr: 2,
+							mr: 4,
 							display: { xs: "flex", md: "none" },
 							flexGrow: 1,
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "inherit",
+							color: "whitesmoke",
 							textDecoration: "none",
 						}}
 					>
-						LOGO
+						Upper Deck
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						{pages.map((page) => (
-							<Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+							<Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "whitesmoke", display: "block" }}>
 								{page}
 							</Button>
 						))}
