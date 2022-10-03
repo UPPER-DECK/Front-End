@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ResponsiveAppBar from "./Components/ResponsiveAppBar";
 import Image from "./Img/a1.jpg";
 
@@ -17,7 +17,9 @@ function App() {
 			<div style={myStyle}>
 				<ResponsiveAppBar />
 
-				<h1>Welcome</h1>
+				<Typography variant="h2" textAlign="center" sx={{ color: "white.main", fontWeight: 400 }}>
+					Upper Deck
+				</Typography>
 			</div>
 		</Box>
 	);
