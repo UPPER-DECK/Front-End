@@ -5,7 +5,6 @@ const HomeTyCapStyle = {
 	alignItems: "center",
 	fontWeight: 800,
 	fontFamily: "monospace",
-
 	background: "whitesmoke",
 	WebkitBackgroundClip: "text",
 	WebkitTextFillColor: "transparent",
