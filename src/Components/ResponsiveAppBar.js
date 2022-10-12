@@ -12,8 +12,13 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import RestaurantSharpIcon from "@mui/icons-material/RestaurantSharp";
+import { useNavigate } from "react-router-dom";
 
-const pages = ["Dashborad", "Categories", "Contact"];
+const pages = [
+	{ name: "Dashboard", link: "/dashboard" },
+	{ name: "Categories", link: "/categories" },
+	{ name: "Contact", link: "/contact" },
+];
 const settings = ["Profile", "About", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -35,13 +40,15 @@ const ResponsiveAppBar = () => {
 		setAnchorElUser(null);
 	};
 
+	const navigate = useNavigate();
+
 	return (
 		<AppBar position="static" color="transparent">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<RestaurantSharpIcon sx={{ display: { xs: "none", md: "flex" }, mr: 2, color: "whitesmoke" }} />
 					<Typography
-						variant="h6"
+						variant="h5"
 						noWrap
 						component="a"
 						href="/"
@@ -88,8 +95,14 @@ const ResponsiveAppBar = () => {
 							}}
 						>
 							{pages.map((page) => (
-								<MenuItem key={page} onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{page}</Typography>
+								<MenuItem
+									key={page.name}
+									onClick={() => {
+										navigate(page.link);
+										handleCloseNavMenu();
+									}}
+								>
+									<Typography textAlign="center">{page.name}</Typography>
 								</MenuItem>
 							))}
 						</Menu>
@@ -115,8 +128,16 @@ const ResponsiveAppBar = () => {
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						{pages.map((page) => (
-							<Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "whitesmoke", display: "block" }}>
-								{page}
+							<Button
+								key={page.name}
+								onClick={() => {
+									// alert(page.link);
+									navigate(page.link);
+									handleCloseNavMenu();
+								}}
+								sx={{ my: 2, color: "whitesmoke", display: "block" }}
+							>
+								{page.name}
 							</Button>
 						))}
 					</Box>

@@ -1,4 +1,7 @@
 const HomeTyCapStyle = {
+	mr: 3,
+	md: 3,
+	ml: 3,
 	lineHeight: 1,
 	display: "flex",
 	justifyContent: "center",

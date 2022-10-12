@@ -1,17 +1,17 @@
-const TitleStyles = {
+const ContentPhraseStyles = {
 	mr: 3,
-	md: 3,
-	ml: 10,
-	mt: 10,
-	fontFamily: "Lobster, cursive",
+	md: 5,
+	ml: 3,
+	mt: 6,
+	fontFamily: "Poppins, sans-serif",
 	display: "flex",
 	justifyContent: "left",
 	alignItems: "center",
 	fontWeight: 800,
 
-	letterSpacing: ".3rem",
+	letterSpacing: ".1rem",
 	backgroundRepeat: "repeat",
 	backgroundClip: "text",
 };
 
-export default TitleStyles;
+export default ContentPhraseStyles;

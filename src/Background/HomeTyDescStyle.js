@@ -1,4 +1,9 @@
 const HomeTyDescStyle = {
+	fontFamily: "Lobster, cursive",
+	mr: 3,
+	md: 3,
+	ml: 3,
+	mt: 3,
 	lineHeight: 1,
 	display: "flex",
 	justifyContent: "center",

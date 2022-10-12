@@ -1,12 +1,12 @@
 import { createTheme } from "@mui/material/styles";
 
-const theme = createTheme({
+let theme = createTheme({
 	status: {
 		danger: "#e53e3e",
 	},
 	palette: {
 		background: {
-			default: "#2F4454",
+			default: "#D3D3D3",
 		},
 		primary: {
 			main: "#0971f1",
@@ -26,6 +26,9 @@ const theme = createTheme({
 		grey: {
 			main: "#2F4454",
 		},
+		lgrey: {
+			main: "#D3D3D3",
+		},
 		brown: {
 			main: "#2E151B",
 		},
@@ -37,6 +40,56 @@ const theme = createTheme({
 		},
 		dgreen: {
 			main: "#1C3334",
+		},
+		transparent: {
+			main: "#00FFFFFF",
+		},
+	},
+});
+
+theme = createTheme(theme, {
+	typography: {
+		h1: {
+			fontSize: 45,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 80,
+			},
+		},
+		h2: {
+			fontSize: 40,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 70,
+			},
+		},
+		h3: {
+			fontSize: 35,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 60,
+			},
+		},
+		h4: {
+			fontSize: 30,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 40,
+			},
+		},
+		h5: {
+			fontSize: 20,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 25,
+			},
+		},
+		h6: {
+			fontSize: 15,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 20,
+			},
+		},
+		h7: {
+			fontSize: 10,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 18,
+			},
 		},
 	},
 });
