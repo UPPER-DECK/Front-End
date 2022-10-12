@@ -9,6 +9,8 @@ import DashboardDef from "../Components/DashboardDef";
 import ResponsiveAppBar from "../Components/ResponsiveAppBar";
 import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDoubleArrowDownOutlined";
 import DashboardVar from "../Components/DashboardVar";
+import DashboardBarman from "../Components/DashboardBarman";
+import Duties from "../Components/Duties";
 
 export default function Dashboard() {
 	useEffect(() => {
@@ -56,6 +58,10 @@ export default function Dashboard() {
 			<DashboardDef />
 			<Divider />
 			<DashboardVar />
+			<Divider />
+			<DashboardBarman />
+			<Divider />
+			<Duties />
 		</Box>
 	);
 }

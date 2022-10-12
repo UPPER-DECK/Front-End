@@ -45,8 +45,8 @@ export default function CustomizedAccordions() {
 
 	return (
 		<div>
-			<Accordion expanded={expanded === "panel1"} onChange={handleChange("panel1")} sx={{ mt: 3 }}>
-				<AccordionSummary aria-controls="panel1d-content" id="panel1d-header" sx={{ color: "white.main" }}>
+			<Accordion expanded={expanded === "panel1"} onChange={handleChange("panel1")} sx={{ mt: 3, borderRadius: 2 }}>
+				<AccordionSummary aria-controls="panel1d-content" id="panel1d-header" sx={{ color: "white.main", borderRadius: 2 }}>
 					<Typography sx={AccordionTitleStyles}>Collapsible Group Item #1</Typography>
 				</AccordionSummary>
 				<AccordionDetails sx={{ bgcolor: "lgrey.main" }}>
@@ -56,8 +56,8 @@ export default function CustomizedAccordions() {
 					</Typography>
 				</AccordionDetails>
 			</Accordion>
-			<Accordion expanded={expanded === "panel2"} onChange={handleChange("panel2")}>
-				<AccordionSummary aria-controls="panel2d-content" id="panel2d-header" sx={{ color: "white.main" }}>
+			<Accordion expanded={expanded === "panel2"} onChange={handleChange("panel2")} sx={{ mt: 3, borderRadius: 2 }}>
+				<AccordionSummary aria-controls="panel2d-content" id="panel2d-header" sx={{ color: "white.main", borderRadius: 2 }}>
 					<Typography sx={AccordionTitleStyles}>Collapsible Group Item #2</Typography>
 				</AccordionSummary>
 				<AccordionDetails sx={{ bgcolor: "lgrey.main" }}>
@@ -67,8 +67,8 @@ export default function CustomizedAccordions() {
 					</Typography>
 				</AccordionDetails>
 			</Accordion>
-			<Accordion expanded={expanded === "panel3"} onChange={handleChange("panel3")}>
-				<AccordionSummary aria-controls="panel3d-content" id="panel3d-header" sx={{ color: "white.main" }}>
+			<Accordion expanded={expanded === "panel3"} onChange={handleChange("panel3")} sx={{ mt: 3, borderRadius: 2 }}>
+				<AccordionSummary aria-controls="panel3d-content" id="panel3d-header" sx={{ color: "white.main", borderRadius: 2 }}>
 					<Typography sx={AccordionTitleStyles}>Collapsible Group Item #3</Typography>
 				</AccordionSummary>
 				<AccordionDetails sx={{ bgcolor: "lgrey.main" }}>

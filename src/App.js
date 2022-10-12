@@ -3,6 +3,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
 
 import ScrollToTop from "./Components/ScrollToTop";
+import Footer from "./Components/Footer";
 
 function App() {
 	return (
@@ -16,7 +17,7 @@ function App() {
 					<Route path="/contact" element={<h1>contact</h1>} />
 					<Route path="/" element={<Dashboard />} />
 				</Routes>
-				{/* <Footer /> */}
+				<Footer />
 				{/* </SmoothScrollbar> */}
 			</BrowserRouter>
 		</Box>
