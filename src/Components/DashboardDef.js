@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 import { Box, CssBaseline, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import ContentPhraseStyles from "../Background/ContentPhraseStyles";
-import DashboardGridStyle from "../Background/DashboardGridStyles";
-import DashboardImageStyle from "../Background/DashboardImageStyles";
-import TitleMainStyles from "../Background/TitleMainStyles";
-import TitleStyles from "../Background/TitleStyles";
+import ContentPhraseStyles from "../Background/What is bar/ContentPhraseStyles";
+import DashboardGridStyle from "../Background/What is bar/DashboardGridStyles";
+import DashboardImageStyle from "../Background/What is bar/DashboardImageStyles";
+import TitleMainStyles from "../Background/What is bar/TitleMainStyles";
+import TitleStyles from "../Background/What is bar/TitleStyles";
 
 export default function DashboardDef() {
 	const Item = styled(Paper)(({ theme }) => ({
