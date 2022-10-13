@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { Box, CssBaseline, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import DashboardGridStyle from "../Background/What is bar/DashboardGridStyles";
-import DashboardImageStyle from "../Background/What is bar/DashboardImageStyles";
-import TitleMainVarStyles from "../Background/Varieties of bar/TitleMainVarStyles";
-import TitleVarStyles from "../Background/Varieties of bar/TitleVarStyles";
+import DashboardGridStyle from "../Background/Dashboard/What is bar/DashboardGridStyles";
+import DashboardImageStyle from "../Background/Dashboard/What is bar/DashboardImageStyles";
+import TitleMainVarStyles from "../Background/Dashboard/Varieties of bar/TitleMainVarStyles";
+import TitleVarStyles from "../Background/Dashboard/Varieties of bar/TitleVarStyles";
 import CustomizedAccordions from "./CustomizedAccordions";
 
 export default function DashboardVar() {

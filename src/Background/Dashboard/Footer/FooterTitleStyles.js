@@ -1,8 +1,8 @@
-const FooterGridStyles = {
+const FooterTitleStyles = {
 	mr: 3,
-	md: 3,
-	ml: 10,
-	mt: 10,
+	mb: 3,
+	ml: 3,
+	mt: 3,
 	fontFamily: "Poppins, sans-serif",
 	display: "flex",
 	justifyContent: "left",
@@ -14,4 +14,4 @@ const FooterGridStyles = {
 	backgroundClip: "text",
 };
 
-export default FooterGridStyles;
+export default FooterTitleStyles;

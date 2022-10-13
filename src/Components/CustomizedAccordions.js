@@ -5,8 +5,8 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import AccordionTitleStyles from "../Background/Varieties of bar/AccordionTitleStyles";
-import AccordionContentStyles from "../Background/Varieties of bar/AccordionContentStyles";
+import AccordionTitleStyles from "../Background/Dashboard/Varieties of bar/AccordionTitleStyles";
+import AccordionContentStyles from "../Background/Dashboard/Varieties of bar/AccordionContentStyles";
 
 const Accordion = styled((props) => <MuiAccordion disableGutters elevation={0} square {...props} />)(({ theme }) => ({
 	border: `1px solid ${theme.palette.divider}`,

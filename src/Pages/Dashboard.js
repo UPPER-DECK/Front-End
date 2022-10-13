@@ -1,10 +1,10 @@
 import { Divider, IconButton, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect } from "react";
-import HomeTyCapStyle from "../Background/Dashboard/HomeTyCapStyle";
-import HomeTyDescStyle from "../Background/Dashboard/HomeTyDescStyle";
-import HomeTyStyle from "../Background/Dashboard/HomeTyStyle";
-import myStyle from "../Background/myStyle";
+import HomeTyCapStyle from "../Background/Dashboard/Cover page/HomeTyCapStyle";
+import HomeTyDescStyle from "../Background/Dashboard/Cover page/HomeTyDescStyle";
+import HomeTyStyle from "../Background/Dashboard/Cover page/HomeTyStyle";
+import myStyle from "../Background/Dashboard/Cover page/myStyle";
 import DashboardDef from "../Components/DashboardDef";
 import ResponsiveAppBar from "../Components/ResponsiveAppBar";
 import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDoubleArrowDownOutlined";

@@ -1,4 +1,4 @@
-import Image from "../Img/a1.jpg";
+import Image from "../../../Img/a1.jpg";
 
 const myStyle = {
 	backgroundImage: `url(${Image})`,
