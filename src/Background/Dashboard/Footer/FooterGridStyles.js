@@ -1,11 +1,11 @@
 const FooterGridStyles = {
-	mr: 3,
+	// mr: 3,
 	md: 3,
 	ml: 10,
 	mt: 5,
 	fontFamily: "Poppins, sans-serif",
 	display: "flex",
-	justifyContent: "left",
+	justifyContent: "center",
 	alignItems: "center",
 	fontWeight: 800,
 

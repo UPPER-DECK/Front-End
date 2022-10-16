@@ -101,6 +101,7 @@ const ResponsiveAppBar = () => {
 										navigate(page.link);
 										handleCloseNavMenu();
 									}}
+									// sx={{ backgroundColor: "black.main", color: "white.main" }}
 								>
 									<Typography textAlign="center">{page.name}</Typography>
 								</MenuItem>
