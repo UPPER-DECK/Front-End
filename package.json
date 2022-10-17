@@ -2,10 +2,6 @@
 	"name": "restaurant_web",
 	"version": "0.1.0",
 	"private": true,
-<<<<<<< HEAD
-=======
-	"homepage": "https://dhvihan.github.io/Restaurant-Web",
->>>>>>> ad5fb233181cff4620a4a5938ffd18ed1e5e97bd
 	"dependencies": {
 		"@cloudinary/react": "^1.5.0",
 		"@cloudinary/url-gen": "^1.8.6",
