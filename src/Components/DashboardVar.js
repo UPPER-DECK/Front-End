@@ -25,7 +25,7 @@ export default function DashboardVar() {
 				</Typography>
 			</Typography>
 			<Grid container spacing={0.5} sx={DashboardGridStyle}>
-				<Grid item xs={4}>
+				<Grid item xs={12} sm={12} md={4} lg={4}>
 					<Item>
 						<Box
 							component="img"
@@ -38,7 +38,7 @@ export default function DashboardVar() {
 						/>
 					</Item>
 				</Grid>
-				<Grid item xs={8}>
+				<Grid item xs={12} sm={12} md={8} lg={8}>
 					<Item>
 						<CustomizedAccordions />
 					</Item>

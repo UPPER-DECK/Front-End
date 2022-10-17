@@ -25,7 +25,7 @@ export default function DashboardBarman() {
 				</Typography>
 			</Typography>
 			<Grid container spacing={0.5} sx={DashboardGridStyle}>
-				<Grid item xs={8}>
+				<Grid item xs={12} sm={12} md={8} lg={8}>
 					<Item>
 						<Typography variant="h7" color="dgreen.main" sx={ContentPhraseStyles}>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -33,7 +33,7 @@ export default function DashboardBarman() {
 						</Typography>
 					</Item>
 				</Grid>
-				<Grid item xs={4}>
+				<Grid item xs={12} sm={12} md={4} lg={4}>
 					<Item>
 						<Box
 							component="img"

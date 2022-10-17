@@ -20,7 +20,10 @@ const Accordion = styled((props) => <MuiAccordion disableGutters elevation={0} s
 
 const AccordionSummary = styled((props) => <MuiAccordionSummary expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />} {...props} />)(
 	({ theme }) => ({
-		backgroundColor: theme.palette.mode === "dark" ? "rgb(242, 242, 242)" : "rgb(51, 102, 153)",
+		backgroundColor: "primary",
+		backgroundImage: "-webkit-linear-gradient(45deg, #336699 10%, #000000 100%)",
+		backgroundSize: "100%",
+		backgroundRepeat: "repeat",
 		flexDirection: "row-reverse",
 		"& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
 			transform: "rotate(90deg)",

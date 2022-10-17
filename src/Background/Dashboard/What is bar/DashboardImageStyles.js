@@ -11,7 +11,7 @@ const DashboardImageStyle = {
 		xl: 250,
 	},
 	width: {
-		xs: 110,
+		xs: 330,
 		sm: 220,
 		md: 300,
 		lg: 400,

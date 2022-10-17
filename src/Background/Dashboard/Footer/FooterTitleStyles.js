@@ -7,7 +7,7 @@ const FooterTitleStyles = {
 	display: "flex",
 	justifyContent: "left",
 	alignItems: "center",
-	fontWeight: 800,
+	fontWeight: 1000,
 
 	letterSpacing: ".3rem",
 	backgroundRepeat: "repeat",
