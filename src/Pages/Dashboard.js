@@ -11,7 +11,7 @@ import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDou
 import DashboardVar from "../Components/DashboardVar";
 import DashboardBarman from "../Components/DashboardBarman";
 import Duties from "../Components/Duties";
-import "../App.css";
+import "../Css/App.css";
 
 export default function Dashboard() {
 	useEffect(() => {
@@ -27,12 +27,6 @@ export default function Dashboard() {
 				<Typography variant="h1" noWrap sx={HomeTyStyle} className="glow">
 					UPPER DECK
 				</Typography>
-				{/* <Typography variant="h1" noWrap sx={{ ...HomeTyStyle, display: { xs: "none", md: "flex" } }}>
-					UPPER DECK
-				</Typography> */}
-				{/* <Typography variant="h3" noWrap sx={{ ...HomeTyStyle, display: { xs: "flex", md: "none" } }}>
-					UPPER DECK
-				</Typography> */}
 				<Typography variant="h4" sx={HomeTyCapStyle}>
 					Learn, Build, Share, Repeat.
 				</Typography>

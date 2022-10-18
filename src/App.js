@@ -1,9 +1,11 @@
 import { Box } from "@mui/material";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Dashboard from "./Pages/Dashboard";
 
 import ScrollToTop from "./Components/ScrollToTop";
 import Footerin from "./Components/Footerin";
+import Categories from "./Pages/Categories";
+import Dashboard from "./Pages/Dashboard";
+import Contact from "./Pages/Contact";
 
 function App() {
 	return (
@@ -13,8 +15,8 @@ function App() {
 				{/* <SmoothScrollbar> */}
 				<Routes>
 					<Route path="/dashboard" element={<Dashboard />} />
-					<Route path="/categories" element={<h1>categories</h1>} />
-					<Route path="/contact" element={<h1>contact</h1>} />
+					<Route path="/categories" element={<Categories />} />
+					<Route path="/contact" element={<Contact />} />
 					<Route path="/" element={<Dashboard />} />
 				</Routes>
 				{/* <Footer /> */}
