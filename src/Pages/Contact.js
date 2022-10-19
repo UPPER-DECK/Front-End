@@ -6,6 +6,9 @@ import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDou
 import ConCoverPageStyles from "../Background/Contact/CoverPage/ConCoverPageStyles";
 import ConTyStyles from "../Background/Contact/CoverPage/ConTyStyles";
 import "../Css/Contact.css";
+import TitleStyles from "../Background/Dashboard/What is bar/TitleStyles";
+import TitleMainStyles from "../Background/Dashboard/What is bar/TitleMainStyles";
+import ContactCards from "../Components/Contact/ContactCards";
 
 export default function Contact() {
 	useEffect(() => {
@@ -15,27 +18,38 @@ export default function Contact() {
 		element && element.scrollIntoView({ behavior: "smooth", block: "start" });
 	}, []);
 	return (
-		<Box sx={ConCoverPageStyles}>
-			<ResponsiveAppBar />
-			<Typography variant="h1" noWrap sx={ConTyStyles} className="glow2">
-				CONTACT
-			</Typography>
+		<Box>
+			<Box sx={ConCoverPageStyles}>
+				<ResponsiveAppBar />
+				<Typography variant="h1" noWrap sx={ConTyStyles} className="glow2">
+					CONTACT
+				</Typography>
 
-			<Typography sx={{ display: "flex", justifyContent: "center", alignItems: "center", mt: 3 }}>
-				<IconButton
-					color="lgreen"
-					href="#what"
-					aria-label="KeyboardDoubleArrowDownOutlinedIcon"
-					onClick={(e) => {
-						let what = document.getElementById("what");
-						e.preventDefault();
-						what && what.scrollIntoView({ behavior: "smooth", block: "start" });
-						window.history.pushState("what", "what", "/what");
-					}}
-				>
-					<KeyboardDoubleArrowDownOutlinedIcon sx={{ fontSize: 60 }} />
-				</IconButton>
-			</Typography>
+				<Typography sx={{ display: "flex", justifyContent: "center", alignItems: "center", mt: 3 }}>
+					<IconButton
+						color="lgreen"
+						href="#cont"
+						aria-label="KeyboardDoubleArrowDownOutlinedIcon"
+						onClick={(e) => {
+							let cont = document.getElementById("cont");
+							e.preventDefault();
+							cont && cont.scrollIntoView({ behavior: "smooth", block: "start" });
+							window.history.pushState("cont", "cont", "/cont");
+						}}
+					>
+						<KeyboardDoubleArrowDownOutlinedIcon sx={{ fontSize: 60 }} />
+					</IconButton>
+				</Typography>
+			</Box>
+			<Box id="cont">
+				<Typography variant="h4" color="white.main" sx={TitleStyles}>
+					Our
+					<Typography variant="h4" color="brown.main" sx={TitleMainStyles}>
+						"Team"
+					</Typography>
+				</Typography>
+				<ContactCards />
+			</Box>
 		</Box>
 	);
 }

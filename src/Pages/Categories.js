@@ -5,10 +5,10 @@ import CatTyStyles from "../Background/Categories/CoverPage/CatTyStyles";
 import CoverPageStyles from "../Background/Categories/CoverPage/CoverPageStyles";
 import ResponsiveAppBar from "../Components/ResponsiveAppBar";
 import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDoubleArrowDownOutlined";
-import "../Css/CatCss.css";
-import CategroyCards from "../Components/CategoryCards";
 import TitleStyles from "../Background/Dashboard/What is bar/TitleStyles";
 import TitleMainStyles from "../Background/Dashboard/What is bar/TitleMainStyles";
+import "../Css/CatCss.css";
+import CategroyCards from "../Components/Category/CategoryCards";
 
 export default function Categories() {
 	useEffect(() => {

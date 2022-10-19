@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { Box, CssBaseline, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import TitleMainDuStyles from "../Background/Dashboard/Duties/TitleMainStyles";
-import ContentPhraseStyles from "../Background/Dashboard/What is bar/ContentPhraseStyles";
-import DashboardGridStyle from "../Background/Dashboard/What is bar/DashboardGridStyles";
+import TitleMainDuStyles from "../../Background/Dashboard/Duties/TitleMainStyles";
+import ContentPhraseStyles from "../../Background/Dashboard/What is bar/ContentPhraseStyles";
+import DashboardGridStyle from "../../Background/Dashboard/What is bar/DashboardGridStyles";
 import ButtonBases from "./ButtonBases";
 
 export default function Duties() {

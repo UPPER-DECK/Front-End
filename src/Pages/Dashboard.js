@@ -5,13 +5,13 @@ import HomeTyCapStyle from "../Background/Dashboard/Cover page/HomeTyCapStyle";
 import HomeTyDescStyle from "../Background/Dashboard/Cover page/HomeTyDescStyle";
 import HomeTyStyle from "../Background/Dashboard/Cover page/HomeTyStyle";
 import myStyle from "../Background/Dashboard/Cover page/myStyle";
-import DashboardDef from "../Components/DashboardDef";
 import ResponsiveAppBar from "../Components/ResponsiveAppBar";
 import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDoubleArrowDownOutlined";
-import DashboardVar from "../Components/DashboardVar";
-import DashboardBarman from "../Components/DashboardBarman";
-import Duties from "../Components/Duties";
 import "../Css/App.css";
+import DashboardDef from "../Components/Dashboard/DashboardDef";
+import DashboardVar from "../Components/Dashboard/DashboardVar";
+import DashboardBarman from "../Components/Dashboard/DashboardBarman";
+import Duties from "../Components/Dashboard/Duties";
 
 export default function Dashboard() {
 	useEffect(() => {
