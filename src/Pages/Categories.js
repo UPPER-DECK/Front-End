@@ -7,6 +7,8 @@ import ResponsiveAppBar from "../Components/ResponsiveAppBar";
 import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDoubleArrowDownOutlined";
 import "../Css/CatCss.css";
 import CategroyCards from "../Components/CategoryCards";
+import TitleStyles from "../Background/Dashboard/What is bar/TitleStyles";
+import TitleMainStyles from "../Background/Dashboard/What is bar/TitleMainStyles";
 
 export default function Categories() {
 	useEffect(() => {
@@ -26,20 +28,28 @@ export default function Categories() {
 				<Typography sx={{ display: "flex", justifyContent: "center", alignItems: "center", mt: 3 }}>
 					<IconButton
 						color="brown"
-						href="#what"
+						href="#cate"
 						aria-label="KeyboardDoubleArrowDownOutlinedIcon"
 						onClick={(e) => {
-							let what = document.getElementById("what");
+							let cate = document.getElementById("cate");
 							e.preventDefault();
-							what && what.scrollIntoView({ behavior: "smooth", block: "start" });
-							window.history.pushState("what", "what", "/what");
+							cate && cate.scrollIntoView({ behavior: "smooth", block: "start" });
+							window.history.pushState("cate", "cate", "/cate");
 						}}
 					>
 						<KeyboardDoubleArrowDownOutlinedIcon sx={{ fontSize: 60 }} />
 					</IconButton>
 				</Typography>
 			</Box>
-			<CategroyCards />
+			<Box id="cate">
+				<Typography variant="h4" color="white.main" sx={TitleStyles}>
+					Select {">"}
+					<Typography variant="h4" color="brown.main" sx={TitleMainStyles}>
+						{">"} Below
+					</Typography>
+				</Typography>
+				<CategroyCards />
+			</Box>
 		</Box>
 	);
 }
