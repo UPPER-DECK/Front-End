@@ -4,6 +4,8 @@ import Sheet from "@mui/joy/Sheet";
 import Typography from "@mui/joy/Typography";
 import TextField from "@mui/joy/TextField";
 import Button from "@mui/joy/Button";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
 // import Link from "@mui/joy/Link";
 // import { Button, TextField, useColorScheme } from "@mui/material";
 // import { Typography } from "@material-ui/core";
@@ -28,7 +30,7 @@ function ModeToggle() {
 				setMode(mode === "light" ? "dark" : "light");
 			}}
 		>
-			{mode === "light" ? "Turn dark" : "Turn light"}
+			{mode === "light" ? <DarkModeIcon sx={{ fontSize: 25, color: "grey.main" }} /> : <LightModeIcon sx={{ fontSize: 25, color: "grey.main" }} />}
 		</Button>
 	);
 }
@@ -37,7 +39,6 @@ export default function LoginPage() {
 	return (
 		<CssVarsProvider>
 			<main>
-				<ModeToggle />
 				<Sheet
 					sx={{
 						width: 300,
@@ -56,6 +57,7 @@ export default function LoginPage() {
 					<div>
 						<Typography level="h4" component="h1">
 							<b>Welcome!</b>
+							<ModeToggle />
 						</Typography>
 						<Typography level="body2">Sign in to continue.</Typography>
 					</div>
@@ -63,7 +65,7 @@ export default function LoginPage() {
 						// html input attribute
 						name="email"
 						type="email"
-						placeholder="johndoe@email.com"
+						placeholder="example@email.com"
 						// pass down to FormLabel as children
 						label="Email"
 					/>
