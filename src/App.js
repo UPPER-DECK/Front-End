@@ -6,6 +6,7 @@ import Footerin from "./Components/Footerin";
 import Categories from "./Pages/Categories";
 import Dashboard from "./Pages/Dashboard";
 import Contact from "./Pages/Contact";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/categories" element={<Categories />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/" element={<Dashboard />} />
+					<Route path="/login" element={<LoginPage />} />
 				</Routes>
 				{/* <Footer /> */}
 				<Footerin />

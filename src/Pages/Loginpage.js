@@ -4,7 +4,9 @@ import Sheet from "@mui/joy/Sheet";
 import Typography from "@mui/joy/Typography";
 import TextField from "@mui/joy/TextField";
 import Button from "@mui/joy/Button";
-import Link from "@mui/joy/Link";
+// import Link from "@mui/joy/Link";
+// import { Button, TextField, useColorScheme } from "@mui/material";
+// import { Typography } from "@material-ui/core";
 
 function ModeToggle() {
 	const { mode, setMode } = useColorScheme();
@@ -31,7 +33,7 @@ function ModeToggle() {
 	);
 }
 
-export default function App() {
+export default function LoginPage() {
 	return (
 		<CssVarsProvider>
 			<main>
