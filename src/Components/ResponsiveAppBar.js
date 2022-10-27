@@ -19,7 +19,11 @@ const pages = [
 	{ name: "Categories", link: "/categories" },
 	{ name: "Contact", link: "/contact" },
 ];
-const settings = ["Profile", "About", "Logout"];
+const settings = [
+	{ name: "Profile", link: "/profile" },
+	{ name: "About", link: "/about" },
+	{ name: "Logout", link: "/login" },
+];
 
 const ResponsiveAppBar = () => {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -165,9 +169,21 @@ const ResponsiveAppBar = () => {
 							open={Boolean(anchorElUser)}
 							onClose={handleCloseUserMenu}
 						>
-							{settings.map((setting) => (
+							{/* {settings.map((setting) => (
 								<MenuItem key={setting} onClick={handleCloseUserMenu}>
 									<Typography textAlign="center">{setting}</Typography>
+								</MenuItem>
+							))} */}
+							{settings.map((settings) => (
+								<MenuItem
+									key={settings.name}
+									onClick={() => {
+										navigate(settings.link);
+										handleCloseNavMenu();
+									}}
+									// sx={{ backgroundColor: "black.main", color: "white.main" }}
+								>
+									<Typography textAlign="center">{settings.name}</Typography>
 								</MenuItem>
 							))}
 						</Menu>
