@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import { Divider } from "@material-ui/core";
 import { Avatar, Box, Button, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import FooterGridStyles from "../Background/Dashboard/Footer/FooterGridStyles";
-import FooterTitleStyles from "../Background/Dashboard/Footer/FooterTitleStyles";
-import Image from "../Img/logo.png";
+import FooterGridStyles from "../../Background/Dashboard/Footer/FooterGridStyles";
+import FooterTitleStyles from "../../Background/Dashboard/Footer/FooterTitleStyles";
+import Image from "../../Img/logo.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -81,7 +81,7 @@ const Footerin = () => {
 					<Item>
 						<Grid container direction="row" justifyContent="flex-end" alignItems="center">
 							<Grid item xs={12} sm={12} md={7} lg={7}>
-								<Item sx={{ fontSize: 12 }}>&copy; 2022 Upper Deck. All right reserved.</Item>
+								<Item sx={{ fontSize: 12 }}>Copyright &copy; 2022 Upper Deck. All right reserved.</Item>
 							</Grid>
 							<Grid item xs={3} sm={3} md={1} lg={1}>
 								<Item>
