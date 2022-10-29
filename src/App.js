@@ -14,7 +14,6 @@ function App() {
 		<Box className="App">
 			<BrowserRouter>
 				<ScrollToTop />
-				{/* <SmoothScrollbar> */}
 				<Routes>
 					<Route path="/dashboard" element={<Dashboard />} />
 					<Route path="/categories" element={<Categories />} />
@@ -25,7 +24,6 @@ function App() {
 					<Route path="/profile" element={<ProfilePage />} />
 				</Routes>
 				<Footerin />
-				{/* </SmoothScrollbar> */}
 			</BrowserRouter>
 		</Box>
 	);

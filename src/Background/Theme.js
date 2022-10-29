@@ -91,6 +91,12 @@ theme = createTheme(theme, {
 				fontSize: 18,
 			},
 		},
+		h8: {
+			fontSize: 8,
+			[theme.breakpoints.up("sm")]: {
+				fontSize: 12,
+			},
+		},
 	},
 });
 
