@@ -1,6 +1,6 @@
 const DashboardGridStyle = {
-    display: "flex",
-    // flexWrap: "nowrap",
+	display: "flex",
+	// flexWrap: "nowrap",
 };
 
 export default DashboardGridStyle;
