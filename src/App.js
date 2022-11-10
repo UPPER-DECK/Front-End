@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 import LoginPage from "./Pages/LoginPage";
 import AboutPage from "./Pages/AboutPage";
 import ProfilePage from "./Pages/ProfilePage";
+import Form from "./Pages/Form";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 					<Route path="/login" element={<LoginPage />} />
 					<Route path="/about" element={<AboutPage />} />
 					<Route path="/profile" element={<ProfilePage />} />
+					<Route path="/form" element={<Form />} />
 				</Routes>
 				<Footerin />
 			</BrowserRouter>

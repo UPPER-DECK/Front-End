@@ -4,6 +4,7 @@ import ResponsiveAppBar from "../Components/ResponsiveAppBar";
 import styled from "@emotion/styled";
 import { Grid, Paper } from "@mui/material";
 import ProfileCovPageStyles from "../Background/Profile/ProfileCovPageStyles";
+import FloatingActionButtons from "../Components/Post/FloatingActionButton";
 
 export default function ProfilePage() {
 	useEffect(() => {
@@ -28,7 +29,9 @@ export default function ProfilePage() {
 			<Box>
 				<Grid container spacing={1}>
 					<Grid item xs={12} sm={12} md={12} lg={12}>
-						<Item></Item>
+						<Item>
+							<FloatingActionButtons />
+						</Item>
 					</Grid>
 				</Grid>
 			</Box>
