@@ -1,3 +1,5 @@
+import styled from "@emotion/styled";
+import { Paper } from "@mui/material";
 import React, { useState } from "react";
 
 export default function AddImage() {
@@ -7,9 +9,21 @@ export default function AddImage() {
 		setFile(URL.createObjectURL(e.target.files[0]));
 	}
 
+	const Item = styled(Paper)(({ theme }) => ({
+		padding: theme.spacing(1),
+		textAlign: "left",
+		backgroundColor: "transparent",
+		border: "none",
+		[`& fieldset`]: {
+			borderRadius: 10,
+		},
+		// borderRadius: 25,
+		boxShadow: "none",
+	}));
+
 	return (
 		<div className="App">
-			<h2>Add Image:</h2>
+			<Item>Add Image:</Item>
 			<input type="file" onChange={handleChange} />
 			<img src={file} alt="img" />
 		</div>

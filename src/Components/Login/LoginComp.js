@@ -7,16 +7,11 @@ import Button from "@mui/joy/Button";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { Box } from "@material-ui/core";
-// import Link from "@mui/joy/Link";
-// import { Button, TextField, useColorScheme } from "@mui/material";
-// import { Typography } from "@material-ui/core";
 
 function ModeToggle() {
 	const { mode, setMode } = useColorScheme();
 	const [mounted, setMounted] = React.useState(false);
 
-	// necessary for server-side rendering
-	// because mode is undefined on the server
 	React.useEffect(() => {
 		setMounted(true);
 	}, []);
