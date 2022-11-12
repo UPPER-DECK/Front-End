@@ -2,9 +2,11 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 
 import Box from "@mui/material/Box";
-import { Button, Card, CardActions, CardContent, Grid, MenuItem, Paper, TextField } from "@mui/material";
+import { Button, Card, CardContent, CssBaseline, Grid, MenuItem, Paper, TextField } from "@mui/material";
 import styled from "@emotion/styled";
 import AddImage from "../Components/Post/AddImage";
+import ResponsiveAppBar from "../Components/ResponsiveAppBar";
+import PostCovPageStyles from "../Background/Post/PostCovPageStyles";
 
 const Categories = [
 	{
@@ -41,18 +43,22 @@ export default function Form() {
 	};
 	const Item = styled(Paper)(({ theme }) => ({
 		padding: theme.spacing(1),
-		textAlign: "left",
+		textAlign: "center",
 		backgroundColor: "transparent",
 		border: "none",
 		[`& fieldset`]: {
 			borderRadius: 10,
 		},
-		// borderRadius: 25,
 		boxShadow: "none",
 	}));
 	return (
 		<Box>
-			<Grid container spacing={1}>
+			<CssBaseline />
+			<Box sx={PostCovPageStyles}>
+				<ResponsiveAppBar />
+			</Box>
+
+			<Grid container spacing={1} sx={{ mt: 2 }}>
 				<Card sx={{ minWidth: 275 }}>
 					<CardContent>
 						<Grid item xs={12} sm={12} md={12} lg={12}>
@@ -97,18 +103,18 @@ export default function Form() {
 								</TextField>
 							</Item>
 						</Grid>
-						<Grid item xs={6} sm={6} md={6} lg={6}>
+						<Grid item xs={12} sm={12} md={12} lg={12}>
 							<Item>
-								<AddImage />
+								<Box>
+									<AddImage />
+								</Box>
 							</Item>
 						</Grid>
 						<Grid item xs={12} sm={12} md={12} lg={12}>
 							<Item>
-								<CardActions>
-									<Button variant="contained" color="secondary" sx={{ mt: 1 /* margin top */ }}>
-										Publish
-									</Button>
-								</CardActions>
+								<Button variant="contained" color="secondary" sx={{ mt: 1 /* margin top */ }}>
+									Publish
+								</Button>
 							</Item>
 						</Grid>
 					</CardContent>
