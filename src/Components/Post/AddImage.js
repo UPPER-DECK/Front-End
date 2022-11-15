@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { Paper } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import React, { useState } from "react";
+import PhotoCamera from "@mui/icons-material/PhotoCamera";
 
 export default function AddImage() {
 	const [file, setFile] = useState();
@@ -8,24 +8,14 @@ export default function AddImage() {
 		console.log(e.target.files);
 		setFile(URL.createObjectURL(e.target.files[0]));
 	}
-
-	const Item = styled(Paper)(({ theme }) => ({
-		padding: theme.spacing(1),
-		textAlign: "left",
-		backgroundColor: "transparent",
-		border: "none",
-		[`& fieldset`]: {
-			borderRadius: 10,
-		},
-		// borderRadius: 25,
-		boxShadow: "none",
-	}));
-
 	return (
-		<div className="App">
-			<Item>Add Image:</Item>
-			<input type="file" onChange={handleChange} />
-			<img src={file} alt="img" />
-		</div>
+		<Box className="App">
+			<IconButton color="primary" aria-label="upload picture" component="label">
+				<input hidden accept="image/*" type="file" onChange={handleChange} />
+				{file == null ? <PhotoCamera /> : null}
+			</IconButton>
+			{/* <input type="file" onChange={handleChange} /> */}
+			{file != null ? <img height="150" width="200" sx={{ backgroundSize: "cover" }} src={file} alt="img" /> : null}
+		</Box>
 	);
 }
